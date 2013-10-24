@@ -28,8 +28,12 @@
     <%= f.number_field :quanity %>
   </div>
   <div class="field">
-    <%= f.label :price %><br />
-    <%= f.text_field :price %>
+    <%= f.label "Purchase Price" %><br />
+    <%= f.text_field :purchase_price %>
+  </div>
+  <div class="field">
+    <%= f.label "Sale Price" %><br />
+    <%= f.text_field :sale_price %>
   </div>
   <div class="actions">
     <%= f.submit %>

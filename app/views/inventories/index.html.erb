@@ -5,7 +5,8 @@
     <th>Artist</th>
     <th>Description</th>
     <th>Quanity</th>
-    <th>Price</th>
+    <th>Purchase Price</th>
+    <th>Sale Price</th>
     <th></th>
     <th></th>
     <th></th>
@@ -16,7 +17,8 @@
     <td><%= inventory.artist_id %></td>
     <td><%= inventory.description %></td>
     <td><%= inventory.quanity %></td>
-    <td><%= inventory.price %></td>
+    <td><%= inventory.purchase_price %></td>
+    <td><%= inventory.sale_price %></td>
     <td><%= link_to 'Show', inventory %></td>
     <td><%= link_to 'Edit', edit_inventory_path(inventory) %></td>
     <td><%= link_to 'Delete', inventory, method: :delete, data: { confirm: 'Are you sure?' } %></td>
