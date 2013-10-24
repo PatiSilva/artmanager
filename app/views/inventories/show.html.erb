@@ -25,6 +25,11 @@
   <%= @inventory.sale_price %>
 </p>
 
+<p>
+  <b>Released Date:</b>
+  <%= @inventory.released_date %>
+</p>
+
 
 <%= link_to 'Edit', edit_inventory_path(@inventory) %> |
 <%= link_to 'Back', inventories_path %>

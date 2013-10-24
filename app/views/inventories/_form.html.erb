@@ -35,6 +35,10 @@
     <%= f.label "Sale Price" %><br />
     <%= f.text_field :sale_price %>
   </div>
+  <div class="field">
+    <%= f.label "Released Date" %><br />
+    <%= f.date_select(:released_date, :include_blank => true ) %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
