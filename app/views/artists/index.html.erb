@@ -2,8 +2,7 @@
 
 <table>
   <tr>
-    <th>Last name</th>
-    <th>First name</th>
+    <th>Name</th>
     <th>Street Address</th>
     <th>Additional Address</th>
     <th>City</th>
@@ -20,8 +19,7 @@
 
 <% @artists.each do |artist| %>
   <tr>
-    <td><%= artist.last_name %></td>
-    <td><%= artist.first_name %></td>
+    <td><%= artist.last_name.empty? ? artist.company_name : artist.last_name << ", " << artist.first_name %></td>
     <td><%= artist.address1 %></td>
     <td><%= artist.address2 %></td>
     <td><%= artist.city %></td>

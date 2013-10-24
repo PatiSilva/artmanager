@@ -14,7 +14,7 @@
 
 <% @inventories.each do |inventory| %>
   <tr>
-    <td><%= inventory.artist_id %></td>
+    <td><%= inventory.artist.last_name.empty? ? inventory.artist.company_name : inventory.artist.last_name << ", " << inventory.artist.first_name %></td>
     <td><%= inventory.description %></td>
     <td><%= inventory.quanity %></td>
     <td><%= inventory.purchase_price %></td>
